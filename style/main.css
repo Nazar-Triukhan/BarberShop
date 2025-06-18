@@ -1,12 +1,48 @@
-@import url(./base/_reset.scss);
-@import url(./base/_variable.scss);
-@import url(./base/_command.scss);
-@import url(./base/_container.scss);
-@import url(./section/_header.scss);
-@import url(./section/_hero.scss);
-@import url(./section/_best.scss);
-@import url(./section/_prices.scss);
-@import url(./section/_features.scss);
-@import url(./section/_team.scss);
-@import url(./section/_gallery.scss);
-@import url(./section/_footer.scss);/*# sourceMappingURL=main.css.map */
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: solid 1px red;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 448px) {
+  .container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}/*# sourceMappingURL=main.css.map */

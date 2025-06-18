@@ -1,12 +1,16 @@
-@import url(./base/_reset.scss);
-@import url(./base/_variable.scss);
-@import url(./base/_command.scss);
-@import url(./base/_container.scss);
-@import url(./section/_header.scss);
-@import url(./section/_hero.scss);
-@import url(./section/_best.scss);
-@import url(./section/_prices.scss);
-@import url(./section/_features.scss);
-@import url(./section/_team.scss);
-@import url(./section/_gallery.scss);
-@import url(./section/_footer.scss);
+// Base
+@import './base/reset';
+@import './base/variable';
+@import './base/command';
+@import './base/container';
+
+// Sections
+@import './section/header';
+@import './section/hero';
+@import './section/best';
+@import './section/prices';
+@import './section/features';
+@import './section/team';
+@import './section/gallery';
+@import './section/footer';
+

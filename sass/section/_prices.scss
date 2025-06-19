@@ -103,6 +103,8 @@ margin-right: auto;
     display: none;
         @media screen and  (min-width: 1200px) {
         display: block;
+        display: flex;
+        gap: 20px;
     }
 }
 

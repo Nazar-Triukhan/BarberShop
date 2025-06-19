@@ -486,6 +486,8 @@ body {
 @media screen and (min-width: 1200px) {
   .prices__items-dystop {
     display: block;
+    display: flex;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

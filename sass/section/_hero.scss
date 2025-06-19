@@ -1,0 +1,70 @@
+.hero {
+  background-image: url(../images/prichos.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  margin-top: -100px; 
+  padding-top: 220px; 
+  padding-bottom: 209px;
+
+  position: relative;
+  z-index: 1;
+
+    @media screen and  (min-width:720px) {
+    margin-top: -136px;
+    }
+
+&__box{
+    display: flex;
+   flex-direction: column;
+    gap: 20px;
+
+        @media screen and  (min-width:720px) {
+        justify-content: center;
+        align-items: center;
+    }
+        @media screen and  (min-width: 1200px) {
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+  &__text{
+    color: rgba(157, 164, 189, 0.60);
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+  }
+
+&__title{
+    color: #FFF;
+font-family: Raleway;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.4px;
+    @media screen and  (min-width:448px) {
+       width: 306px; 
+    }
+
+}
+
+&__subtitle{
+    color: #9DA4BD;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+letter-spacing: 0.32px;
+    @media screen and  (min-width:448px) {
+        width: 338px;
+    }
+}
+
+}

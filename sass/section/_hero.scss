@@ -1,6 +1,6 @@
 .hero {
   background-image: url(../images/prichos.png);
-  background-size: cover;
+  background-size: 1200px;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -39,6 +39,17 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: 1.1px;
 text-transform: uppercase;
+display: flex;
+align-items: center;
+gap: 20px;
+
+&::before{
+    content: '';
+    width: 60px;
+height: 1px;
+background: rgba(157, 164, 189, 0.60);
+display: block;
+}
   }
 
 &__title{

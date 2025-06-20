@@ -1,0 +1,75 @@
+.team{
+padding: 84px 0;
+background: #F7F7F7;
+
+    &__text{
+        color: #303030;
+font-size: 11px;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+    }
+
+    &__title{
+color: #303030;
+font-family: Raleway;
+font-size: 42px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.1px;
+margin-top: 20px;
+margin-bottom: 44px;
+    }
+
+    &__img{
+        width: 100%;
+    @media screen and  (min-width:448px) {
+              width: 418px;
+    }
+    }
+}
+&__headlin{
+    color: #303030;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.36px;
+margin-top: 30px;
+}
+
+
+&__paragraf{
+    color: #FF6C00;
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.28px;
+margin-top: 8px;
+}
+&__items{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;  
+    justify-content: center;
+    align-items: center;
+}
+
+&__social{
+        width: 44px;
+height: 44px;
+background-color: #FFF;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+&__icon{
+    width: 20px;
+height: 20px;
+fill:#303030;
+
+}

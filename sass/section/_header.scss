@@ -1,5 +1,5 @@
 .header{
-
+background-color: #FF6C00;
   position: relative;
   z-index: 2; /* поверх hero */
   background: transparent;
@@ -13,8 +13,13 @@
  }
 
 
+&__icon{
+  fill: #FFF;
+  width: 20px;
+  height: 20px;
+}
 
-  &__img{
+  &__menu{
     width: 69px;
     height: 55px;
     display: block;

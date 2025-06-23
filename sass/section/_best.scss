@@ -44,31 +44,28 @@
     margin-left: 30px;
   }
 
-  &__besc {
-    color: #303030;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+&__besc {
+  color: #303030;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &::before {
+    content:'';
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
     display: block;
   }
+}
 
-  &__line-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-  }
 
-  &__line {
-    width: 1px;
-    height: 60px;
-    transform: rotate(90deg);
-    background: #303030;
-    display: inline;
-    margin-left: 30px;
-  }
+  
 
   &__title {
     color: #303030;

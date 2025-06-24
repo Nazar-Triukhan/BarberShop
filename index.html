@@ -33,10 +33,33 @@
             <!-- <a class="header__logo" href="./index.html"><svg class="header__icon">
                 <use href="#"></use>
             </svg></a> -->
-            <button class="header__burger" type="button"><svg class="header__menu">
+            <button class="header__burger" type="button" data-modal-open><svg class="header__menu">
                 <use href="./images/symbol-defs.svg#icon-menu"></use>
             </svg></button>
         </div>
+<!-- 
+         <div class="mobile is-hidden" data-mobile>
+          <button type="button" class="mobile__close" data-mobile-close>
+            <svg class="mobile__icon">
+          <use href="./image/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="./index.html" class="mobile__link active">Студія</a></li>
+            <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+            <li class="mobile__item"><a href="#" class="mobile__link">Контакти</a></li>
+          </ul>
+          <ul class="mobile__items">
+            <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contact">+38 096 111 11 11</a></li>
+            <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile__elements">
+            <li class="mobile__elem"><a href="#" class="mobile__social">Instagram</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Twitter</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Facebook</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">LinkedIn</a></li>
+          </ul>
+        </div> -->
     </header>
     <main>
         <section class="hero">
@@ -58,7 +81,7 @@
             </div>
             <div class="best__box-tho">
             <p class="best__desc">About</p>
-            <h2 class="best_title">Best Barbershop in <br>your city</h2>
+            <h2 class="best__title">Best Barbershop in <br>your city</h2>
             <p class="best__subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
             <p class="best__text">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
             <button class="best__btn" type="button">ONLINE-BOOKING</button>
@@ -68,7 +91,7 @@
         </section>
         <section class="prices">
           <div class="container">
-            <p class="prices__text">Spend your time with the best masters</p>
+            <p class="prices__tex">Spend your time with the best masters</p>
             <h2 class="prices__tit">Services and prices</h2>
             <div class="prices__wraper">
             <ul class="prices__list">
@@ -137,19 +160,28 @@
             <div class="features__cont">
             <ul class="features__list">
                 <li class="features__item">
-                    <h2 class="features__heading">600</h2>
+                    <h2 class="features__heading">600
+                    </h2>
+                    <span class="features__plus">+</span>
                     <p class="features__desc">Satisfied customers per day</p>
+                    
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">50</h2>
+                    <h2 class="features__heading">50
+                    </h2>
+                    <span class="features__plus">+</span>
                     <p class="features__desc">Awards for excellent service</p>
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">20</h2>
+                    <h2 class="features__heading">20
+                    </h2>
+                    <span class="features__plus">+</span>
                     <p class="features__desc">Kyiv’s best barbers</p>
                 </li>
                 <li class="features__item">
-                    <h2 class="features__heading">100</h2>
+                    <h2 class="features__heading">100
+                    </h2>
+                    <span class="features__plus">+</span>
                     <p class="features__desc">Gifts for regular customers</p>
                 </li>
             </ul>
@@ -283,41 +315,82 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-        <div class="footer__wrap">
-            <form class="footer__form">
-            <h2 class="footer__title">Online-booking</h2>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <section class="footer__register">
+        <form class="footer__form">
+          <h2 class="footer__title">Online-booking</h2>
+
+          <div class="footer__input-group">
             <label class="footer__label">Name*
-                <input required type="text">
+              <input required type="text" />
             </label>
             <label class="footer__label">Phone*
-                <input required type="text">
+              <input required type="text" />
             </label>
-            <label class="footer__label">Message
-                <textarea class="footer__textarea"></textarea>
-            </label>
-            <button class="footer__btn" type="submit">Send</button>
-        </form>
-        </div>
-        <div class="footer__box">
-            <h2 class="footer__heading">Contacts</h2>
-            <address class="footer__address"><svg class="footer__icon">
-                <use href=""></use>
-            </svg>st. Vasilkovaya, 7A Kiev, 08132</address>
-            <ul class="footer__list">
-                <li class="footer__item"><a href="tel:+380441111111" class="footer__contact"><svg class="footer__icon">
-                    <use></use>
-                </svg>+38 044 111 11 11</a></li>
-                <li class="footer__item"><a href="mailto:barbershop@email.com" class="footer__contact"><svg class="footer__icon">
-                    <use></use>
-                </svg>barbershop@email.com</a></li>
-            </ul>
-            <p class="footer__text">Working hours</p>
-            <h2 class="footer__subtitle">Every day from 9:00 to 22:00</h2>
-        </div>
-        </div>
-    </footer>
+          </div>
 
+          <label class="footer__label">Message
+            <textarea class="footer__textarea"></textarea>
+          </label>
+
+          <button class="footer__btn" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="footer__contacs">
+        <h2 class="footer__heading">Contacts</h2>
+        <div class="footer__wraper">
+          <div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__contact">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-location"></use>
+                  </svg>
+                  <span class="footer__text">st. Vasilkovaya, 7A Kiev, 08132</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="tel:+380441111111" class="footer__contact">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  <span>+38 044 111 11 11</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="mailto:barbershop@email.com" class="footer__contact">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-envelop"></use>
+                  </svg>
+                  <span>barbershop@email.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__tex">Working hours</p>
+            <h2 class="footer__contact">Every day from 9:00 to 22:00</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+          <section class="Copyright">
+            <div class="container">
+            <ul class="Copyright__list">
+                <li class="Copyright__item">
+                    <p class="Copyright__text">Instagram</p>
+                </li>
+                <li class="Copyright__item">
+                    <p class="Copyright__text">Youtube</p>
+                </li>
+            </ul>
+            <p class="Copyright__textarea">&copy; Copyright 2020</p>
+            </div>
+          </section>
 </body>
 </html>

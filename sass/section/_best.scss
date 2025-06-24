@@ -44,7 +44,8 @@
     margin-left: 30px;
   }
 
-&__besc {
+
+&__desc{
   color: #303030;
   font-size: 11px;
   font-style: normal;
@@ -55,14 +56,15 @@
   align-items: center;
   gap: 20px;
 
-  &::before {
-    content:'';
-    width: 60px;
-    height: 1px;
-    background-color: #303030;
-    display: block;
-  }
+&::before{
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #303030;
 }
+}
+
 
 
   

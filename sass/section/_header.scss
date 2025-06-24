@@ -117,3 +117,12 @@
     cursor: pointer;
   }
 }
+
+.is-hidden {
+ pointer-events: none;
+  opacity: 0;
+}
+
+  .mobil{
+    display: none;
+  }

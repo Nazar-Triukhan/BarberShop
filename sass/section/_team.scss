@@ -25,6 +25,16 @@
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+        &::before{
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: #303030;
+    }
   }
 
   &__title {

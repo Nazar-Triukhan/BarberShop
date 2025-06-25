@@ -121,8 +121,15 @@
 .is-hidden {
  pointer-events: none;
   opacity: 0;
+  display: none;
 }
 
   .mobil{
     display: none;
+    opacity: 0;
   }
+
+  .no-scroll {
+  overflow: hidden;
+}
+

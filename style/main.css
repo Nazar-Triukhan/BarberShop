@@ -414,13 +414,16 @@ body.modal-open {
     padding: 123px 0 117px 0;
   }
 }
+.prices .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .prices__tex {
   color: rgba(157, 164, 189, 0.6);
   font-family: "Open Sans";
   font-size: 11px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: uppercase;
   margin-bottom: 20px;
   display: flex;
@@ -434,95 +437,105 @@ body.modal-open {
   height: 1px;
   background: rgba(157, 164, 189, 0.6);
 }
-.prices__text {
-  color: #9DA4BD;
-  margin-left: auto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.28px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.prices__text::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(157, 164, 189, 0.6);
-}
-@media screen and (min-width: 720px) {
-  .prices__text::before {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 720px) {
-  .prices__text {
-    font-size: 18px;
-  }
-}
-.prices__item {
-  display: flex;
-}
 .prices__tit {
   color: #FFF;
   font-family: Raleway;
   font-size: 42px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 2.1px;
-  width: 100%;
   margin-bottom: 44px;
 }
 .prices__wraper {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-.prices__title {
-  color: #9DA4BD;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 142.857% */
-  letter-spacing: 0.28px;
-  text-align: left;
-  display: block;
-}
-@media screen and (min-width: 720px) {
-  .prices__title {
-    font-size: 18px;
+@media screen and (min-width: 1200px) {
+  .prices__wraper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .prices__list {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   padding: 30px 20px 30px 40px;
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   display: flex;
   flex-direction: column;
   gap: 20px;
+  list-style: none;
+  margin: 0;
 }
-@media screen and (min-width: 448px) {
+@media screen and (min-width: 1200px) {
   .prices__list {
-    width: 418px;
+    width: calc(50% - 10px);
   }
 }
+.prices__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-items: end;
+}
+.prices__title {
+  color: #9DA4BD;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.28px;
+  margin: 0;
+  white-space: nowrap;
+  order: 1;
+}
 @media screen and (min-width: 720px) {
-  .prices__list {
-    width: 690px;
+  .prices__title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.36px;
+  }
+}
+.prices__text {
+  color: #9DA4BD;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.28px;
+  margin: 0;
+  white-space: nowrap;
+  order: 3;
+}
+@media screen and (min-width: 720px) {
+  .prices__text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.36px;
+  }
+}
+.prices__item::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+  order: 2;
+}
+@media screen and (min-width: 1200px) {
+  .prices__none {
+    display: none;
+  }
+}
+.prices__items-dystop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .prices__items-dystop {
+    display: flex;
   }
 }
 .prices__btn {
-  background-color: rgba(157, 164, 189, 0);
+  background-color: transparent;
   color: #FFF;
   font-size: 12px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
   border-radius: 25px;
@@ -532,21 +545,11 @@ body.modal-open {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.prices__items-dystop {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .prices__items-dystop {
-    display: block;
-    display: flex;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .prices__none {
-    display: none;
-  }
+.prices__btn:hover {
+  background-color: rgba(255, 108, 0, 0.1);
 }
 
 .features {
